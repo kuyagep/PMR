@@ -1,0 +1,30 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^index/?$ index.php [NC,L]
+#admin
+RewriteRule ^dashboard/?$ index.php?page=dashboard [NC,L]
+RewriteRule ^issued-items/?$ index.php?page=issued-items [NC,L]
+RewriteRule ^items/?$ index.php?page=items [NC,L]
+RewriteRule ^employee/?$ index.php?page=employee [NC,L]
+RewriteRule ^position/?$ index.php?page=position [NC,L]
+RewriteRule ^office/?$ index.php?page=office [NC,L]
+RewriteRule ^suppliers/?$ index.php?page=suppliers [NC,L]
+RewriteRule ^category/?$ index.php?page=category [NC,L]
+RewriteRule ^status/?$ index.php?page=status [NC,L]
+RewriteRule ^reports/?$ index.php?page=reports [NC,L]
+RewriteRule ^profile/?$ index.php?page=profile [NC,L]
+RewriteRule ^role/?$ index.php?page=role [NC,L]
+RewriteRule ^pmr/?$ index.php?page=pmr [NC,L]
+RewriteRule ^pmr-report/?$ index.php?page=pmr-report [NC,L]
+RewriteRule ^purchase-category/?$ index.php?page=pcategory [NC,L]
+#users
+RewriteRule ^user-dashboard/?$ index.php?page=user-dashboard [NC,L]
+RewriteRule ^profile/?$ index.php?page=profile [NC,L]
+RewriteRule ^user-dashboard/?$ index.php?page=user-dashboard [NC,L]
+RewriteRule ^user-dashboard/?$ index.php?page=user-dashboard [NC,L]
+RewriteRule ^user-dashboard/?$ index.php?page=user-dashboard [NC,L]
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+#RewriteRule ^index/([0-9]+)/([0-9a-zA-Z_-]+) index.php?page=$1 [NC]
+RewriteRule ^index/([0-9a-zA-Z_-]+) index.php?page=$1 [NC]
