@@ -42,14 +42,14 @@
             </a>
         </li>
         <li class="nav-header">Reports</li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a href="pmr-report" class="nav-link ">
                 <i class="fas fa-cubes nav-icon"></i>
                 <p>
                     PMR
                 </p>
             </a>
-        </li>
+        </li> -->
         <!-- <li class="nav-item">
             <a href="items" class="nav-link ">
                 <i class="fas fa-cubes nav-icon"></i>
